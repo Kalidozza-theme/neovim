@@ -1,10 +1,4 @@
-¡Absolutamente\! Me encanta el proyecto y la energía. Vamos a transformar esta sección de tu `README` para que sea más atractiva, clara y fácil de seguir, especialmente para los usuarios de Neovim con diferentes gestores de paquetes.
-
-Aquí tienes la versión adornada, con los pasos de instalación para VS Code, `lazy.nvim`, y `vim.pack()`:
-
----
-
-# 🧡🎨 Kalidozza: A Warm VS Code & Neovim Experience
+# 🧡🎨 Kalidozza: A Warm Neovim Experience
 
 **Kalidozza** is a meticulously handcrafted color scheme designed to bring warmth, focus, and visual comfort to your coding and design environment.
 
@@ -22,20 +16,6 @@ Escape the harsh white light and give your eyes the rest they deserve with a pal
 
 ## ⬇️ Installation
 
-### 🖥️ 1. VS Code
-
-1.  Open **Extensions** (Ctrl+Shift+X or Cmd+Shift+X).
-2.  Search for **"Kalidozza"**.
-3.  Click **Install**.
-4.  Go to **File** \> **Preferences** \> **Color Theme** (or **Code** \> **Settings** \> **Color Theme** on Mac).
-5.  Select **Kalidozza 🧡🎨**.
-
----
-
-### 💻 2. Neovim (Powered by Themery)
-
-This Neovim theme is a direct adaptation from the exceptional **Themery** project, providing a seamless Kalidozza experience right in your terminal.
-
 > **Note:** This theme is a fork built upon the robust foundation of [themery.nvim](https://github.com/tahayvr/themery.nvim). Please give them a star\!
 
 #### **A. Using `lazy.nvim` (Recommended)**
@@ -49,7 +29,7 @@ Add the following configuration to your `plugins/kalidozza.lua` or wherever you 
   priority = 1000,
   config = function()
     -- Set the Kalidozza colorscheme
-    vim.cmd.colorscheme("kalidozza")
+    vim.cmd.colorscheme("kalidozza") -- this is not Recommended, set it via lazy.lua
 
     -- Optional: Configure the theme further if Themery allows (e.g., specific options)
     -- require("kalidozza").setup({
@@ -59,35 +39,21 @@ Add the following configuration to your `plugins/kalidozza.lua` or wherever you 
 }
 ```
 
-#### **B. Using `vim.pack()` (Built-in Plugin Management)**
+##### **B. Using `vim.pack()` (Built-in Plugin Management)**
 
-If you prefer the native package manager, follow these steps:
+If you are using the modern built-in plugin manager (`vim.pack`), setting up Kalidozza is simple.
 
-1.  Create the following directory structure in your configuration path (`~/.config/nvim/`):
+Add the following lines to your `init.lua`:
 
-    ```bash
-    mkdir -p ~/.config/nvim/pack/themes/start/
-    ```
+```lua
+-- 1. Add Kalidozza to be managed by vim.pack
+vim.pack.add({
+  'https://github.com/Kalidozza-theme/Kalidozza-theme',
+})
+vim.cmd.colorscheme("kalidozza")
+```
 
-2.  Clone the repository into the `start` directory:
-
-    ```bash
-    git clone https://github.com/Kalidozza-theme/Kalidozza-theme.git ~/.config/nvim/pack/themes/start/Kalidozza-theme
-    ```
-
-3.  Finally, set the theme in your `init.lua` or `init.vim`:
-
-    **In `init.lua`:**
-
-    ```lua
-    vim.cmd.colorscheme("kalidozza")
-    ```
-
-    **In `init.vim`:**
-
-    ```vim
-    colorscheme kalidozza
-    ```
+---
 
 ## 💖 Credits
 
@@ -95,6 +61,14 @@ This beautiful theme is made possible by the incredible work of the **[themery.n
 
 We encourage you to show your support and **give a star** to the original repository\!
 
----
+### How to support my work
 
-¿Qué te parece? Ahora el `README` es mucho más completo y las instrucciones son claras para los usuarios de VS Code y Neovim.
+You can make a donation via Liberapay(click me).
+
+<a href="https://liberapay.com/afrolino02/"><img src="./resource/liberapay.svg" alt="Liberapay" width="80"/></a>
+
+# 📜 Licensing
+
+Kalidozza is an open-source project distributed under the GNU General Public License (GPL).
+This means you are free to use, modify, and distribute this software under the terms of the GPL.
+For more details, please see the LICENSE file included in the repository.
