@@ -1,4 +1,4 @@
-local colors = require("themery.colors").palette
+local colors = require("kalidozza.colors").palette
 
 local M = {}
 
