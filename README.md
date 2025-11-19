@@ -24,7 +24,7 @@ Add the following configuration to your `plugins/kalidozza.lua` or wherever you 
 
 ```lua
 {
-  "Kalidozza-theme/Kalidozza-theme", -- Reemplaza con el nombre de tu repo si es diferente
+  "Kalidozza-theme/neovim", -- Reemplaza con el nombre de tu repo si es diferente
   lazy = false, -- Load immediately
   priority = 1000,
   config = function()
@@ -48,7 +48,7 @@ Add the following lines to your `init.lua`:
 ```lua
 -- 1. Add Kalidozza to be managed by vim.pack
 vim.pack.add({
-  'https://github.com/Kalidozza-theme/Kalidozza-theme',
+  'https://github.com/Kalidozza-theme/neovim',
 })
 vim.cmd.colorscheme("kalidozza")
 ```
