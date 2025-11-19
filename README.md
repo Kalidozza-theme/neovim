@@ -63,9 +63,15 @@ We encourage you to show your support and **give a star** to the original reposi
 
 ### How to support my work
 
-You can make a donation via Liberapay(click me).
+## 💖 Support the Kalidozza Project
 
-<a href="https://liberapay.com/afrolino02/"><img src="./resource/liberapay.svg" alt="Liberapay" width="80"/></a>
+_Consideration_:Developing and maintaining high-quality, eye-friendly themes like Kalidozza requires dedicated time and resources. If you appreciate the comfort and care this color scheme brings to your workflow, you can support its continued development and maintenance.
+
+You can easily support my work via Liberapay. Your donation directly fuels future updates and new features!
+
+<a href="https://liberapay.com/afrolino02/">
+  <img src="./resource/liberapay.svg" alt="Support Kalidozza on Liberapay" width="80"/>
+</a>
 
 # 📜 Licensing
 
